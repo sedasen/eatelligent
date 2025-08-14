@@ -91,7 +91,7 @@ main {
 }
 
 .site-section {
-  margin-block-start: 100px;
+  margin-block-start: 150px;
   padding-inline: 10px;
   @media (min-width: 768px) {
     padding-inline: 0px;
@@ -377,7 +377,7 @@ main {
     & > .result {
       display: flex;
       align-items: center;
-      padding: 30px;
+      padding: 40px;
       border-radius: 20px;
       gap: 30px;
 
@@ -448,7 +448,7 @@ main {
     justify-content: center;
     gap: 30px;
     & > .pricing {
-      padding: 30px;
+      padding: 40px;
       display: flex;
       flex-direction: column;
       gap: 32px;
@@ -541,11 +541,81 @@ main {
 
 /* TESTIMONIALS SECTION */
 .site-section.section--testimonials {
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    & > .testimonial {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      background-color: var(--card-bg-color);
+      border-radius: 20px;
+      .testimonial-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        & > .testimonial-logo {
+          height: 40px;
+        }
+        & > .rate {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          & > .score {
+            color: var(--text-color);
+            font-size: 18px;
+            font-weight: 600;
+          }
+          & > .rate-icon {
+            height: 20px;
+          }
+        }
+      }
+
+      & > .content {
+        color: rgba(16, 16, 18, 0.7);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      & > .customer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+
+        & > .name {
+          color: var(--text-color);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+        }
+
+        & > .job-title {
+          color: rgba(16, 16, 18, 0.7);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+  }
   @media (min-width: 600px) {
     // tablet
   }
   @media (min-width: 768px) {
-    // small desktop
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
   }
   @media (min-width: 992px) {
     // desktop
