@@ -625,5 +625,68 @@ main {
   }
 }
 
+/* FOOTER BANNER SECTION */
+.site-section.section--footer-banner {
+  .banner {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-image: url(assets/footer.png);
+    & > .slogan {
+      color: var(--text-color);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    & > .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-block-start: 16px;
+      button.banner-action {
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid var(--button-border-color);
+        border-radius: 99px;
+        &:hover {
+          background-color: var(--brand-color);
+          border-color: var(--brand-color);
+          color: var(--primary-button-color);
+        }
+        &.primary {
+          background-color: var(--primary-button-bg-color);
+          color: var(--primary-button-color);
+          &:hover {
+            background-color: var(--brand-color);
+            border-color: var(--brand-color);
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    // tablet
+  }
+  @media (min-width: 768px) {
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  @media (min-width: 992px) {
+    // desktop
+  }
+  @media (min-width: 1200px) {
+    // large desktop
+  }
+}
+
 .site-footer {
 }
