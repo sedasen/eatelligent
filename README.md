@@ -28,3 +28,5 @@ cd eatelligent
 ```bash
 pnpm install
 ```
+<img width="1920" height="1080" alt="Cover" src="https://github.com/user-attachments/assets/621cefd7-9ac5-48d4-a5b6-88e35c854e9c" />
+
